@@ -1,5 +1,47 @@
 # Release Notes
 
+## Yadda 0.17.5
+- Supports mixed async and sync - Thanks [chrisns](https://github.com/chrisns)
+- Steps can return promises - Thanks [chrisns](https://github.com/chrisns)
+- Stopped casper integration throwing an exception when path module could not be found
+
+## Yadda 0.17.4
+- Fixing a typo
+
+## Yadda 0.17.3
+- Configurable placeholder characters used in example tables. Requested in [#203](https://github.com/acuminous/yadda/issues/203)
+
+## Yadda 0.17.2
+- Karma support courtesy of [inf3rno](https://github.com/inf3rno). Thanks very much.
+- Removed NODE_ENV=test which caused failures on windows.
+
+## Yadda 0.17.1
+- Chinese Localisation - thanks [snowyu](https://github.com/snowyu).
+
+## Yadda 0.17.0
+* Fixed a [bug](https://github.com/acuminous/yadda/issues/188) which discarded blank lines at the end of a multline step. If the scenario had multiple multline steps, then an ending blank line in the first step, was injected into the second step.
+
+## Yadda 0.16.3
+* Fixed a [bug](https://github.com/acuminous/yadda/issues/187) introduced in 0.16.2 which meant Yadda picked the more undesirable step when two step implementations in the same library matches the step text.
+
+## Yadda 0.16.2
+* When yadda find two matching steps with the same Levenshtein distance, it will prefer the one defined in the same library as the previous step.
+
+## Yadda 0.16.1
+* Removed bind so phantom works without polyfill
+
+## Yadda 0.16.0
+* Outer borders on data tables are ignored
+
+## Yadda 0.15.5
+* Fixed but with the mocha ScenarioLevelPlugin which cased all tests to timeout
+
+## Yadda 0.15.4
+* Dutch language support courtesy of [https://github.com/remkoboschker](remkoboschker). Thanks.
+
+## Yadda 0.15.3
+* Step name included in context automatically courtesy of [remkoboschker](https://github.com/remkoboschker). Thanks.
+
 ## Yadda 0.15.2
 * Multiline Steps and data-table converters (multiline data tables are still a work in progress)
 * Protractor example courtesy of [mgijsbertihodenpijl])[https://github.com/mgijsbertihodenpijl]. Thanks
